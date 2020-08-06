@@ -123,7 +123,8 @@ function TeacherForm() {
                                 { value: 'Historia', label: 'Historia' },
                                 { value: 'Geografia', label: 'Geografia' },
                                 { value: 'Ingles', label: 'Ingles' },
-                                { value: 'Espanhol', label: 'Espanhol' }
+                                { value: 'Espanhol', label: 'Espanhol' },
+                                { value: 'Programação', label: 'Programação' }
                             ]}
                         />
                         <Input 
