@@ -9,6 +9,7 @@ import './styles.css';
 // Seta oq pode ser recebido pelo page header via props
 interface PageHeaderProps {
     title: string;
+    description?: string;
 }
 
 const PageHeader: React.FunctionComponent<PageHeaderProps> = (props) => {
@@ -24,6 +25,9 @@ const PageHeader: React.FunctionComponent<PageHeaderProps> = (props) => {
 
             <div className="header-content">
                 <strong>{props.title}</strong>
+
+                {/* O && é um condicional caso o primeiro argumento exista/seja verdadeiro, executa o segundo */}
+                { props.description && <p>{props.description}</p> }
 
                 {/* O children traz oq vem dentro do corpo da tag via props */}
                 {props.children}
